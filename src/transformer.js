@@ -1,8 +1,8 @@
 const transformer = (text) => {
   // Split to array 2D
-  const arr = text.split(' ')
+  const arr = text.split(' ');
   for (let i = 0; i < arr.length; i++) {
-    arr[i] = arr[i].split('')
+    arr[i] = arr[i].split('');
   }
 
   // Random uppercase

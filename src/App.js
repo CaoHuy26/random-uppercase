@@ -15,14 +15,41 @@ const App = () => {
   }
 
   return (
-    <div className="App">
-      <TextArea rows={4} value={input} onChange={(e) => setInput(e.target.value)} />
-        <br/>
-        <Button type="primary" danger onClick={() => onClick(input)}>
-          Chuyển đổi
-        </Button>
-          <br/>
-      <TextArea rows={4} value={output} />
+    <div
+      className="App"
+      style={{
+        height: 400,
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+      }}
+    >
+      <div style={{marginTop: 20, marginBottom: 10}}>
+        <img
+          src={require('./img/kHaBaNh.jpg')}
+          alt='kHaBaNh'
+          style={{width: 150}}
+        />
+        <h3>kHÁ bảNh つ sÂn ChƠi giỚi TRẻ</h3>
+      </div>
+      <TextArea
+        style={{width: 400}}
+        placeholder='kHÁ bảNh つ sÂn ChƠi giỚi TRẻ...'
+        rows={4}
+        value={input}
+        onChange={(e) => setInput(e.target.value)}
+      />
+      <br/>
+      <Button type="primary" danger onClick={() => onClick(input)}>
+       ấN đi DâN chƠI
+      </Button>
+      <br/>
+      <TextArea
+        style={{width: 400}}
+        rows={4}
+        value={output}
+      />
     </div>
   );
 }
