@@ -5,12 +5,10 @@ const transformer = (text) => {
     arr[i] = arr[i].split('');
   }
 
-  let x = 0;
   // Random uppercase
   for (let i = 0; i < arr.length; i++) {
     for (let j = 0; j < arr[i].length; j++) {
-      x += 1;
-      if (x % 2 !== 0) {
+      if (Math.random() * 10 > 4.5) {
         arr[i][j] = arr[i][j].toUpperCase();
       }
     }
